@@ -4,7 +4,54 @@ import logo from './assets/Verv-Logo.png';
 import rightMove from './assets/right-move.png';
 import zoopla from './assets/zoopla.png';
 function App() {
-
+    const AddtionalServices = [
+        {
+            id: 1,
+            title: 'Tenant Referencing',
+            price: 19.99            
+        },
+        {
+            id: 2,
+            title: 'Rent Collection',
+            price: 39.99            
+        },
+        {
+            id: 3,
+            title: 'Gas Safety Certificate (CP12)',
+            price: 54.99            
+        },
+        {
+            id: 4,
+            title: 'Energy Performance Certificate (EPC)',
+            price: 85.99            
+        },
+        {
+            id: 9,
+            title: 'Electrical Safety Certificate (EICR)',
+            price: 75.99            
+        },
+        {
+            id: 5,
+            title: 'Inventory & Check-In/Out',
+            price: 95.99            
+        },
+        {
+            id: 6,
+            title: 'Pro Photos',
+            price: 25.99            
+        },
+        {
+            id: 7,
+            title: 'Floor Plans',
+            price: 9.99            
+        },
+        {
+            id: 8,
+            title: 'Accompanied Viewings Service',
+            price: 29.99            
+        }
+        
+    ]
     return (
         <>
             <div className='my-12'>
@@ -205,13 +252,15 @@ function App() {
             <div className='my-12'>
                  {/* Rent Ready */}
                  <div className='grid grid-cols-3 gap-6 lg:w-[1216px] md:w-3/5 w-5/6 mx-auto'  >
+                 {
+                    AddtionalServices.map(service => <span key={service.id}>
                     <div className='border border-[#EEF1F3] rounded-lg'>
                         <div className='p-5'>
                             <div className='flex justify-between pb-5'>
-                                <h3 className="text-[#30455f] pr-4 text-xl font-semibold font-['Inter'] leading-normal ">Tenant Referencing</h3>
+                                <h3 className="text-[#30455f] pr-4 text-xl font-semibold font-['Inter'] leading-normal ">{service.title}</h3>
                                 <div className=''>
                                     <h4 className="text-[#56677d] text-base font-normal font-['Inter'] leading-normal" >From</h4>
-                                    <h6 className="text-center text-[#50b533] text-2xl font-semibold font-['Inter'] leading-[28.80px]" >£19.99</h6>
+                                    <h6 className="text-center text-[#50b533] text-2xl font-semibold font-['Inter'] leading-[28.80px]" >{service.price}</h6>
                                 </div>
                                 
                             </div>
@@ -223,7 +272,10 @@ function App() {
                             </div>
                         </div>
                     </div> 
-                    <div className='border border-[#EEF1F3] rounded-lg'>
+                    </span>)
+                 }
+                    
+                    {/* <div className='border border-[#EEF1F3] rounded-lg'>
                         <div className='p-5'>
                             <div className='flex justify-between pb-5'>
                                 <h3 className="text-[#30455f] pr-4 text-xl font-semibold font-['Inter'] leading-normal ">Rent Collection</h3>
@@ -366,11 +418,11 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>  */}
                  </div>
             </div>
         </>
-        // justify-end items-center gap-[98px] inline-flex overflow-hidden
+    
     )
 }
 
