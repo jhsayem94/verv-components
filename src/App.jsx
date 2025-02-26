@@ -103,7 +103,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className=" h-[318px] px-8 lg:pr-[143px] py-6 lg:h-full bg-white flex-col justify-start items-start ">
+                        <div className=" h-[318px] px-8 lg:pr-[143px] py-6 lg:h-full bg-white flex-col justify-start items-start rounded-r-3xl">
                             <div className="flex-col justify-start items-start gap-4 flex">
                                 <h3 className="text-[#30455f] text-lg font-semibold font-['Inter']">What’s included:</h3>
                                 <div className="flex-col justify-start items-start gap-2 flex">
@@ -140,7 +140,7 @@ function App() {
                                         </div>
                                     </div>
                                 </div>
-                                <button className="h-[33px] p-2 bg-white rounded-[32px] border border-[#50b533] flex-col justify-center items-center gap-1 flex">
+                                <button className="h-[33px] py-2 px-6 bg-white rounded-[32px] border border-[#50b533] flex-col justify-center items-center gap-1 flex">
                                     <span className="text-[#50b533] text-sm font-semibold font-['Inter']">Show more</span>
                                 </button>
                             </div>
@@ -174,7 +174,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="self-stretch justify-end items-start lg:flex">
+                    <div className="self-stretch justify-end items-start lg:flex ">
                         <div className="pl-8 lg:pr-[143px] pt-6 lg:h-full pb-6 bg-white border-r border-[#30455f]/10 justify-start items-center ">
                             <div className="self-stretch flex-col justify-start items-start gap-4 ">
                                 <h3 className="text-[#30455f] text-lg font-semibold font-['Inter']">3 Months Adverting on:</h3>
@@ -200,7 +200,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className=" h-[318px] px-8 lg:pr-[143px] py-6 lg:h-full bg-white flex-col justify-start items-start ">
+                        <div className=" h-[318px] px-8 lg:pr-[143px] py-6 lg:h-full bg-white flex-col justify-start items-start rounded-r-3xl">
                             <div className="flex-col justify-start items-start gap-4 flex">
                                 <h3 className="text-[#30455f] text-lg font-semibold font-['Inter']">What’s included:</h3>
                                 <div className="flex-col justify-start items-start gap-2 flex">
@@ -237,7 +237,7 @@ function App() {
                                         </div>
                                     </div>
                                 </div>
-                                <button className="h-[33px] p-2 bg-white rounded-[32px] border border-[#50b533] flex-col justify-center items-center gap-1 flex">
+                                <button className="h-[33px] py-2 px-6 bg-white rounded-[32px] border border-[#50b533] flex-col justify-center items-center gap-1 flex">
                                     <span className="text-[#50b533] text-sm font-semibold font-['Inter']">Show more</span>
                                 </button>
                             </div>
@@ -251,10 +251,9 @@ function App() {
             <h2 className="text-center text-[#30455f] text-[32px] font-semibold font-['Inter'] leading-[38.40px] my-12">Additional Services</h2>
             <div className='my-12'>
                  {/* Rent Ready */}
-                 <div className='grid grid-cols-3 gap-6 lg:w-[1216px] md:w-3/5 w-5/6 mx-auto'  >
+                 <div className='grid lg:grid-cols-3 lg:gap-6 gap-y-4  lg:w-[1216px] md:w-3/5 lg-px-0 px-4 mx-auto'  >
                  {
-                    AddtionalServices.map(service => <span key={service.id}>
-                    <div className='border border-[#EEF1F3] rounded-lg'>
+                    AddtionalServices.map(service => <div key={service.id} className='border border-[#EEF1F3] rounded-lg min-w-[370px]'>
                         <div className='p-5'>
                             <div className='flex justify-between pb-5'>
                                 <h3 className="text-[#30455f] pr-4 text-xl font-semibold font-['Inter'] leading-normal ">{service.title}</h3>
@@ -265,14 +264,13 @@ function App() {
                                 
                             </div>
                             <div className='flex justify-between items-end' >
-                            <a href='#' className="w-[230px] h-12 p-2 bg-[#30455f] rounded-lg justify-center items-center gap-2 inline-flex text-white text-lg font-semibold font-['Inter']">Order</a>
+                            <a href='#' className="min-w-[230px] h-12 p-2 bg-[#30455f] rounded-lg justify-center items-center gap-2 inline-flex text-white text-lg font-semibold font-['Inter']">Order</a>
                                 <div className='pb-2'>
                                     <a href="#" className="text-[#56677d] text-lg font-medium font-['Inter'] underline">More info</a>
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    </span>)
+                    </div>)
                  }
                     
                     {/* <div className='border border-[#EEF1F3] rounded-lg'>
