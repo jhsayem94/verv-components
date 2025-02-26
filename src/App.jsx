@@ -57,8 +57,8 @@ function App() {
             <div className='my-12'>
                 {/* Premier Listings */}
                 <div className=" lg:w-[1216px] md:w-3/5 w-5/6 mx-auto  bg-[#faf4ff] rounded-3xl shadow-[0px_4px_20px_0px_rgba(0,0,0,0.08)] border border-[#eef1f3]  lg:flex lg:justify-end lg:items-center lg:gap-[96px]">
-                    <div className='flex justify-center md:justify-start pl-8 lg:pl-0'>
-                        <div className="  self-stretch flex-col justify-center items-center gap-6 inline-flex py-6">
+                    <div className='flex justify-center md:justify-start pl-8 lg:pl-0 '>
+                        <div className="  self-stretch flex-col justify-center items-center gap-6 inline-flex py-6 ">
                             <div className="flex-col lg:justify-start items-center gap-6 inline-flex">
                                 <div className="h-[59px] flex-col justify-start items-center gap-2 ">
                                     <h2 className="text-center text-[#30455f] text-2xl font-semibold font-['Inter'] leading-[28.80px]">Premier Listings</h2>
@@ -103,7 +103,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className=" h-[318px] px-8 lg:pr-[143px] py-6 lg:h-full bg-white flex-col justify-start items-start rounded-r-3xl">
+                        <div className=" h-[318px] px-8 lg:pr-[143px] py-6 lg:h-full bg-white flex-col justify-start items-start lg:rounded-r-3xl rounded-b-3xl lg:rounded-bl-none rounded-bl-3xl ">
                             <div className="flex-col justify-start items-start gap-4 flex">
                                 <h3 className="text-[#30455f] text-lg font-semibold font-['Inter']">What’s included:</h3>
                                 <div className="flex-col justify-start items-start gap-2 flex">
@@ -200,7 +200,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className=" h-[318px] px-8 lg:pr-[143px] py-6 lg:h-full bg-white flex-col justify-start items-start rounded-r-3xl">
+                        <div className=" h-[318px] px-8 lg:pr-[143px] py-6 lg:h-full bg-white flex-col justify-start items-start lg:rounded-r-3xl rounded-b-3xl lg:rounded-bl-none rounded-bl-3xl">
                             <div className="flex-col justify-start items-start gap-4 flex">
                                 <h3 className="text-[#30455f] text-lg font-semibold font-['Inter']">What’s included:</h3>
                                 <div className="flex-col justify-start items-start gap-2 flex">
