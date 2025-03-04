@@ -77,7 +77,7 @@ const vervPricing = () => {
             <div className='my-12'>
                 {/* Premier Listings */}
                 <div className=" lg:w-[1216px] md:w-3/5 w-5/6 mx-auto  bg-[#F5F5F5] rounded-3xl shadow-custom border border-[#eef1f3]  lg:flex lg:justify-end lg:items-center lg:gap-[76px]">
-                    <div className='flex justify-center  pl-8 lg:pl-0'>
+                    <div className='flex justify-center   lg:pl-0'>
                         <div className="  self-stretch flex-col justify-center items-center gap-6 inline-flex py-6  ">
                             <div className="flex-col lg:justify-start items-center gap-6 inline-flex">
                                 <div className="h-[59px] flex-col justify-start items-center gap-2 ">
@@ -97,25 +97,13 @@ const vervPricing = () => {
                     <div className="self-stretch justify-end items-start lg:flex">
                         <div className="pl-8 lg:pr-[143px] pt-6 lg:h-full pb-6 bg-white border-r border-[#30455f]/10 justify-start items-center ">
                             <div className="self-stretch flex-col justify-start items-start gap-4 ">
-                                <h3 className="text-[#30455f] text-lg font-semibold font-['Inter']">Active Listings on:</h3>
+                                <h3 className="text-[#30455f] text-lg font-semibold font-['Inter'] w-[201px] ">Active Listings on:</h3>
                                 <div className="flex-col justify-start items-start gap-4 flex">
                                     <div className="justify-center items-center gap-2 inline-flex">
                                         <div className="relative">
                                             <img src={circle} alt="" className='h-[20px] w-[20px]' />
                                         </div>
                                         <img className="w-[61px] h-6" src={logo} />
-                                    </div>
-                                    <div className="justify-center items-center gap-2 inline-flex">
-                                        <div className="relative">
-                                            <img src={circle} alt="" className='h-[20px] w-[20px]' />
-                                        </div>
-                                        <img className="w-[132px] h-[24px]" src={zoopla} />
-                                    </div>
-                                    <div className="justify-center items-center gap-2 inline-flex">
-                                        <div className="relative">
-                                            <img src={circle} alt="" className='h-[20px] w-[20px]' />
-                                        </div>
-                                        <img className="w-[117px] h-[24px]" src={rightMove} />
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +156,7 @@ const vervPricing = () => {
             <div className='my-12'>
                 {/* Premier Listings */}
                 <div className=" lg:w-[1216px] md:w-3/5 w-5/6 mx-auto  bg-[#faf4ff] rounded-3xl shadow-custom border border-[#eef1f3]  lg:flex lg:justify-end lg:items-center lg:gap-[86px]">
-                    <div className='flex justify-center  pl-8 lg:pl-0 '>
+                    <div className='flex justify-center   lg:pl-0 '>
                         <div className="  self-stretch flex-col justify-center items-center gap-6 inline-flex py-6 ">
                             <div className="flex-col lg:justify-start items-center gap-6 inline-flex">
                                 <div className="h-[59px] flex-col justify-start items-center gap-2 ">
@@ -265,7 +253,7 @@ const vervPricing = () => {
             <div className='my-12'>
                 {/* Rent Ready */}
                 <div className=" lg:w-[1216px] md:w-3/5 w-5/6 mx-auto  bg-[#eef8eb] rounded-3xl shadow-custom border border-[#eef1f3]  lg:flex lg:justify-end lg:items-center lg:gap-[86px]">
-                    <div className='flex justify-center  pl-8 lg:pl-0'>
+                    <div className='flex justify-center  '>
                         <div className="  self-stretch flex-col justify-center items-center gap-6 inline-flex py-6">
                             <div className="flex-col lg:justify-start items-center gap-6 inline-flex">
                                 <div className="h-[59px] flex-col justify-start items-center gap-2 ">
